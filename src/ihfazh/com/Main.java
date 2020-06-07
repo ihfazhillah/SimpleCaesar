@@ -17,7 +17,15 @@ public class Main {
         encrypted = encryptor.encrypt('1');
         System.out.println(encrypted);
         // when decrypt:
+        SimpleDecrypt decryptor = new SimpleDecrypt(myString);
         // d = a
+        char decrypted = decryptor.decrypt('d');
+        System.out.println(decrypted);
         // c = Z
+        decrypted = decryptor.decrypt('c');
+        System.out.println(decrypted);
+        // 1 = 1
+        decrypted = decryptor.decrypt('1');
+        System.out.println(decrypted);
     }
 }
